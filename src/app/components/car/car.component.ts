@@ -22,7 +22,7 @@ export class CarComponent implements OnInit {
     this.colors = {
       car: 'red',
       salon: 'black',
-      wheeles: 'silver'
+      wheels: 'silver'
     };
     this.options = ["ABS", "autopilot", "Parking"];
   }
@@ -31,5 +31,5 @@ export class CarComponent implements OnInit {
 interface Colors {
   car: string,
   salon: string,
-  wheeles: string
+  wheels: string
 }

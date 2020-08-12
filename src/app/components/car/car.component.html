@@ -1,11 +1,16 @@
 <div class="container">
-    <p><mark>Автомобиль:</mark>{{ name }}</p>
-    <p>{{ speed }}</p>
-    <p>{{ colors.car }}</p>
-    <p>{{ model }}</p>
-    <p>{{ colors.car }}</p>
-    <p>{{ colors.salon }}</p>
-    <p>{{ colors.wheeles }}</p>
+    <br>
+    <mark>Автомобиль:</mark>{{ name }}
+    <small>{{ model }}</small>
+    <div class="alert alert-success">
+        Характеристики автомобиля:
+        <ul>
+            <li>Скорость: <strong>{{speed}}</strong> км</li>
+            <li>Цвет автомобиля: <strong>{{colors.car}}</strong></li>
+            <li>Цвет салона: <strong>{{colors.salon}}</strong></li>
+            <li>Цвет колес: <strong>colors.wheels</strong></li>
+        </ul>
+    </div>
 
     <h5>Возможности автомобиля:</h5>
     <div class="alert alert-warning">
