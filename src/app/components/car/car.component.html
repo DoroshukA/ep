@@ -1,0 +1,16 @@
+<div class="container">
+    <p><mark>Автомобиль:</mark>{{ name }}</p>
+    <p>{{ speed }}</p>
+    <p>{{ colors.car }}</p>
+    <p>{{ model }}</p>
+    <p>{{ colors.car }}</p>
+    <p>{{ colors.salon }}</p>
+    <p>{{ colors.wheeles }}</p>
+
+    <h5>Возможности автомобиля:</h5>
+    <div class="alert alert-warning">
+        <ul>
+            <li *ngFor="let opt of options; let i = index">{{i+1}} - {{opt}}</li>
+        </ul>
+    </div>
+</div>
