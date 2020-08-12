@@ -8,7 +8,7 @@
             <li>Скорость: <strong>{{speed}}</strong> км</li>
             <li>Цвет автомобиля: <strong>{{colors.car}}</strong></li>
             <li>Цвет салона: <strong>{{colors.salon}}</strong></li>
-            <li>Цвет колес: <strong>colors.wheels</strong></li>
+            <li>Цвет колес: <strong>{{colors.wheels}}</strong></li>
         </ul>
     </div>
 
@@ -19,3 +19,7 @@
         </ul>
     </div>
 </div>
+<h5>Выберите автомобиль</h5>
+<button class="btn btn-danger" (click)="carSelect('bmw')">BMW</button>
+<button class="btn btn-success" (click)="carSelect('audi')">Audi</button>
+<button class="btn btn-info" (click)="carSelect('mer')">Mercedes</button>
