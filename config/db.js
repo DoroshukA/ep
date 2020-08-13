@@ -1,4 +1,4 @@
 module.exports = {
-    db: "mongodb+srv://Andrey:<password>@cluster0.pm6ut.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    db: "mongodb://localhost:27017/website",
     secret: "some_key"
 }

@@ -28,6 +28,9 @@ export class CarComponent implements OnInit {
   }
 
   addOpt(option) {
+    const opt = {
+      options: this.options
+    }
     this.options.unshift(option);
     return false;
   }

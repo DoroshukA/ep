@@ -1,18 +1,13 @@
 const mongoose = require('mongoose');
 const config = require('./config/db');
+const express =require('express');
 
+mongoose.connect(config.db, {useNewUrlParser: true, useUnifiedTopology: true});
 
-mongoose.connect(config.db);
-
-mongoose.connect.on('connected', () => {
-    console.log("OK")
+mongoose.connection.on('connected', ()=> {
+    console.log("we connect to DB");
 });
 
-mongoose.connect.on('error', (err) => {
-    console.log(":(((((")
+mongoose.connection.on('error', (err)=> {
+    console.log("we not connect to DB" + err);
 });
-
-const Cat = mongoose.model('Cat', { name: String });
-
-const kitty = new Cat({ name: 'Zildjian' });
-kitty.save().then(() => console.log('meow'));
