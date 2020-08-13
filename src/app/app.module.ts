@@ -7,6 +7,9 @@ import { CarComponent } from './components/car/car.component';
 
 import { FormsModule } from '@angular/forms';
 
+import { SaveOptionService } from './save-option.service';
+import { HttpModule } from '@angular/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,9 +18,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [SaveOptionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

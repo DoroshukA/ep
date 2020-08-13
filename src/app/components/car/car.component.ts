@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SaveOptionService } from '../save-option.service';
 
 @Component({
   selector: 'app-car',
@@ -13,7 +14,9 @@ export class CarComponent implements OnInit {
   colors: Colors;
   options: string[];
 
-  constructor() { }
+  constructor(
+    private saveOptionService: SaveOptionService
+  ) { }
 
   ngOnInit(): void {
     this.name = 'Audi';

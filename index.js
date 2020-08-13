@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const config = require('./config/db');
-const express =require('express');
+const express = require('express');
 
 mongoose.connect(config.db, {useNewUrlParser: true, useUnifiedTopology: true});
 
